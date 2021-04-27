@@ -1,0 +1,69 @@
+.interface-aliments {
+  width: 100%;
+}
+
+.interface-btn-container-aliments{
+  padding:15px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.interface-btn-container-aliments .add-btn {
+box-shadow: 0px 0px 10px rgb(100, 98, 98);
+  padding:25px;
+  border-radius:5px;
+  background-color: rgb(78, 83, 104);
+  transition: all 0.4s;
+}
+
+.interface-btn-container-aliments .add-btn:hover {
+  transition: all 0.4s;
+  background-color: rgba(103, 114, 156, 0.671);
+  cursor: pointer;
+}
+
+.interface-btn-container-aliments .add-btn a {
+  color:white;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: bold;
+  font-family: 'Rounded Elegance', Arial;
+}
+
+.aliments-cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left:30px;
+}
+
+.aliment-card {
+  font-family: 'Rounded Elegance', Arial;
+  font-size: 24px;
+  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  box-shadow: 0px 0px 15px rgb(163, 162, 162);
+  width:270px;
+  height:160px;
+  margin:15px;
+  border-radius: 5px;
+}
+
+.aliment-card a {
+  font-size: 16px;
+  color:white;
+  text-decoration: none;
+  background-color: rgb(214, 192, 68);
+  padding:8px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px rgb(109, 114, 62);
+  transition: all 0.2s;
+}
+
+.aliment-card a:hover {
+  transition: all 0.3s;
+  background-color: rgba(192, 180, 109, 0.548);
+  padding:12px;
+}

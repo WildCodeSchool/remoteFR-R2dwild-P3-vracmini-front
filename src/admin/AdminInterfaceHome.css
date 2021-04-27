@@ -1,0 +1,9 @@
+.interface-home {
+  display: flex;
+  background: whitesmoke;
+  min-height:100vh;
+}
+.menu-interface {
+  background-color: whitesmoke;
+}
+

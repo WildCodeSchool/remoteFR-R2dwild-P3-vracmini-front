@@ -1,0 +1,76 @@
+.interface-add-aliments {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    margin-top: 30px;
+    background-color: rgb(241, 241, 241);
+    box-shadow:0px 0px 10px rgba(41, 41, 41, 0.459);
+    padding: 30px;
+    border-radius: 20px;
+    width: 70%;
+  }
+.interface-add-aliments h1 {
+  font-family: 'Rounded Elegance', Arial;
+}
+  .interface-add-aliments form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .interface-add-aliments input {
+    width:30%;
+    height:30px;
+  }
+
+.interface-add-aliments .editor {
+  margin-top:20px;
+  width:80%;
+}
+
+.interface-add-aliments label{
+  margin-top:30px;
+  font-size: 20px;
+  font-family: 'Rounded Elegance', Arial;
+}
+
+.interface-add-aliments button {
+  width:30%;
+  margin-top:10px;
+  color: white;
+  font-weight: bold;
+  padding:15px;
+  border-radius:5px;
+  border:none;
+  font-size: 20px;;
+  box-shadow:1px 1px 10px  black;
+  background-color: rgb(78, 83, 104);
+  cursor: pointer;
+}
+
+.interface-add-aliments button:hover{
+  transition:all 0.3s;
+  opacity: 0.6;
+}
+
+#title-add-recipe {
+  margin: 0;;
+font-size: 200%;
+  text-align: center;
+  color: rgb(78, 83, 104);
+}
+.add-aliment-btn-container {
+  width:100%;
+  display:flex;
+  justify-content: space-around;
+  align-items: center;
+  font-family: 'Rounded Elegance', Arial;
+}
+.add-aliment-btn-container button a, .add-aliment-btn-container button {
+  font-family: 'Rounded Elegance', Arial;
+  color:white;
+  text-decoration: none;;
+}
+.categorie-aliment-select{
+  padding:3px;
+  font-size:20px;
+}

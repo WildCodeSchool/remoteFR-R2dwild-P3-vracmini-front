@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap');
+
+.aliment-page{
+  border: 5px solid #F0D8B8;
+  width: 45vw;
+  margin:auto;
+  display: flex;
+  flex-direction: column;
+  font-family: 'Open Sans Condensed', sans-serif;
+  padding: 10px;
+  box-shadow: 0px 0px 15px #4e4e4e65;
+}
+
+#title-aliment-detail {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom:20px;
+}
+
+#title-aliment-detail h2{
+  font-size: 250%;
+  color : #F8DBAF;
+}
+
+#title-aliment-detail h3{
+  font-size: 150%;
+  margin-right: 40px;
+}
+
+#content-aliment-detail {
+  border-top:1px solid rgb(207, 204, 204);
+  padding-top:20px;
+  margin: auto;
+ width: 80%;
+}
+
+.aliment-img{
+  width: 350px;
+  border-radius:5px;
+}
+
+#tiny-content-aliment {
+  font-size: 22px;
+  padding-left: 10px;
+  margin:auto
+}
+
+/* responsive */
+@media only screen and (max-width: 1350px) and (min-width: 800px){
+  
+  .aliment-img{
+    width: 70%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 30px;
+  }
+
+  .aliment-page{
+    width: 70vw;
+  }
+
+  #title-aliment-detail{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .title-aliment-container{
+    display: flex;
+    justify-content: space-around;
+  }
+
+  #title-aliment-detail h2{
+    margin: 0;
+  }
+  
+  #title-aliment-detail h3{
+    margin: 0px;
+    padding-top: 20px;
+  }
+
+}
+
+@media only screen and (max-width: 800px) {
+  .aliment-page{
+    width: 90vw;
+  }
+
+  .aliment-img{
+    width: 70%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 30px;
+  }
+
+  #title-aliment-detail{
+    display: flex;
+    flex-direction: column;
+  }
+
+  #tiny-content-aliment {
+    font-size: 18px;
+    padding: 0;
+  }
+
+  #title-aliment-detail h2{
+    margin: 0;
+  }
+  
+  #title-aliment-detail h3{
+    margin: 0px;
+    padding-top: 20px;
+  }
+
+  .title-aliment-container{
+    display: flex;
+    justify-content: space-around;
+  }
+}
+

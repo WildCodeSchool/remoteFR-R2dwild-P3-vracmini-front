@@ -1,39 +1,97 @@
-import React, { useState } from 'react'
-
-import logo_menu_burger from '../img/logo_menu_burger.svg'
+/* eslint-disable react/no-unescaped-entities */
+import { NavLink, Link } from 'react-router-dom'
 
 import './BurgerMenu.css'
+import imgWoman from '../img/personnage1Reduit.png'
 
-const BurgerMenu = () => {
-  const [visible, setVisible] = useState(false)
-
-  const handleClick = () => {
-    setVisible(!visible)
-  }
-
+const BurgerMenu = prevProps => {
   return (
-    <div>
-      <div className='container_logo_burger_menu' onClick={handleClick}>
-        <img className='logo_burger_menu' src={logo_menu_burger} />
-      </div>
-
-      <div className='burger-menu'>
-        <nav className='navbar'>
-          <div className={visible ? 'visible' : 'invisible'}>
-            <div className='close-menu-burger' onClick={handleClick}>
-              X
-            </div>
-            <ul className='navbar_ul_header'>
-              <li>L'histoire en vrac</li>
-              <li>Ensemble Vrac'ons</li>
-              <li>Vrac'n co</li>
-              <li>Aux fourneaux</li>
-              <li>E-shop</li>
-              <li>Vrac'o sensible community</li>
-              <li>Contact</li>
-            </ul>
-          </div>
-        </nav>
+    <div className='menu-burger-content'>
+      <div id='menu-page' className={prevProps.burgerContent}>
+        <div className='menu-global'>
+          <img className='woman-burger' src={imgWoman} alt='femme' />
+          <ul className='menu-list'>
+            <li className='menu-link'>
+              <NavLink
+                activeClassName='active-burger-link'
+                to='/'
+                onClick={prevProps.handleClickBurger}
+              >
+                L'histoire... EN VRAC
+              </NavLink>
+            </li>
+            <li className='menu-link'>
+              <NavLink to='/' onClick={prevProps.handleClickBurger}>
+                Ensemble, VRAC'ONS !
+              </NavLink>
+            </li>
+            <li className='menu-link'>
+              <NavLink
+                activeStyle={{
+                  fontWeight: 'bold',
+                  color: '#F0D8B8',
+                  fontSize: '24px'
+                }}
+                to='/aux_fourneaux'
+                onClick={prevProps.handleClickBurger}
+              >
+                Aux Fourneaux
+              </NavLink>
+            </li>
+            <li className='menu-link'>
+              <NavLink
+                to='/vracnco'
+                activeStyle={{
+                  fontWeight: 'bold',
+                  color: '#F0D8B8',
+                  fontSize: '24px'
+                }}
+                onClick={prevProps.handleClickBurger}
+              >
+                VRAC'n Co
+              </NavLink>
+            </li>
+            <li className='menu-link'>
+              <NavLink
+                to='/'
+                activeClassName='active-burger-link'
+                onClick={prevProps.handleClickBurger}
+              >
+                VRAC community
+              </NavLink>
+            </li>
+            <li className='menu-link'>
+              <NavLink
+                to='/contact'
+                activeStyle={{
+                  fontWeight: 'bold',
+                  color: '#F0D8B8',
+                  fontSize: '24px'
+                }}
+                onClick={prevProps.handleClickBurger}
+              >
+                Contact
+              </NavLink>
+            </li>
+            <li className='menu-link'>
+              <NavLink to='/' onClick={prevProps.handleClickBurger}>
+                E-shop
+              </NavLink>
+            </li>
+          </ul>
+        </div>
+        <div className='buttons-users'>
+          <Link to='' className='burger-inscription'>
+            S'inscrire
+          </Link>
+          <Link
+            onClick={prevProps.handleClickBurger}
+            to='/login'
+            className='burger-connexion'
+          >
+            Se connecter
+          </Link>
+        </div>
       </div>
     </div>
   )

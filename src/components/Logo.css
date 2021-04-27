@@ -1,0 +1,11 @@
+.logo {
+  height: 100px;
+}
+
+.logos {
+  display: flex;
+  justify-content: space-around;
+  padding: 10px 0 10px 0;
+  margin-top: 20px;
+}
+

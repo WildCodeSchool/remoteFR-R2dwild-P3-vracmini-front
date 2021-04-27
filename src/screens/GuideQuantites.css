@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap');
+
+.pots-position{
+  display: flex;
+  justify-content: space-around;
+}
+.pot-quantites-intro{
+  width: 18%;
+}
+
+.text-intro-quantites{
+ font-family: 'open sans condensed';
+ text-align: center;
+ font-size: 36px;
+ font-weight: lighter;
+}
+
+.indications-global{
+  display: flex;
+  justify-content: space-around;
+}
+
+.indications-grammes{
+  padding-top: 20px;
+  padding-left: 10px;
+}
+
+.indications-grammes p{
+  font-family: 'Amatic SC', cursive;
+  margin: 7px;
+  font-size: 25px;
+  
+}
+
+.indications-quantites{
+  display: flex;
+  justify-content: center;
+  padding-top: 200px;
+}
+
+.infos-indications{
+  font-family: 'open sans condensed';
+}
+
+.infos-indications-global{
+  display:flex;
+  justify-content: space-around;
+  font-size:20px;
+  padding-bottom: 100px;
+  padding-top: 10px;
+}
+
+.name-aliments{
+  padding-top: 20px;
+  font-family: 'open sans condensed';
+}
+
+.name-aliments p{
+  font-size: 24px;
+  margin: 5px;
+  text-align: right;
+}
+
+.pot-x{
+  width: 40%;
+  padding-right: 20px;
+}
+
+@media screen and (max-width: 750px){
+  .pots-position{
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .pot-quantites-intro{
+    width: 50%;
+  }
+  .text-intro-quantites{
+    font-size: 18px;
+  }
+
+  .indications-global{
+    display:flex;
+    flex-direction: column;
+  }
+  .indications-quantites{
+    padding-top: 50px;
+  }
+  .pot-x{
+    width: 40%;
+    height: 40%;
+    padding-top: 40px;
+  }
+  .name-aliments p{
+    font-size: 18px;
+  }
+
+  .indications-grammes p{
+    font-size: 18px;
+  }
+
+  .infos-indications{
+    font-size: 18px;
+  }
+
+  .invisible-info{
+    display: none;
+  }
+}

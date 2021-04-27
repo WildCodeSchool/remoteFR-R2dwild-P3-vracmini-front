@@ -1,0 +1,88 @@
+.update-podart-page {
+  display: flex;
+  justify-content: center;
+  width:100%;
+}
+.update-podart-page a {
+  text-decoration: none;
+  color:white;
+}
+.update-podart-container{
+  margin-top: 30px;
+  margin-bottom: 40px;
+  width: 70%;
+  box-shadow: 0px 0px 15px rgb(189, 183, 183);
+  display: flex;
+  flex-direction:column;
+  align-items: center;
+}
+.update-podart-container h1 {
+  font-family: 'Rounded Elegance', Arial;
+  font-size:35px;
+}
+.update-podart-container input {
+  font-size:18px;
+  margin:5px;
+}
+.update-podart-container label {
+  font-size:25px;
+  margin-top:20px;
+  margin-bottom:5px;
+  font-family: 'Rounded Elegance', Arial;
+  font-weight: bold;
+} 
+.update-podart-container select {
+  font-size:18px;
+}
+.update-podart-btn {
+  font-size: 16px;
+  color:white;
+  text-decoration: none;
+  border:none;
+  background-color: rgb(214, 192, 68);
+  padding:8px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px rgb(109, 114, 62);
+  transition: all 0.2s;
+  margin-top: 10px;
+  font-family: 'Rounded Elegance', Arial;
+}
+.update-podart-btn:hover {
+  transition: all 0.3s;
+  font-size: 20px;
+  background-color: rgba(192, 180, 109, 0.548);
+  cursor: pointer;
+}
+.update-podart-btn-container button {
+  margin:20px;
+  font-size:20px;
+}
+.update-podart-btn-container .return-page-admin{
+  box-shadow: 0px 0px 10px rgb(100, 98, 98);
+  padding:15px;
+  border-radius:5px;
+  background-color: rgb(78, 83, 104);
+  transition: all 0.4s;
+  border: none;
+}
+.update-podart-btn-container .return-page-admin:hover{ 
+  background-color: rgba(144, 158, 214, 0.473);
+  cursor: pointer;
+  transition: all 0.4s;
+}
+
+.update-podart-btn-container .delete-podart-btn {
+  box-shadow: 0px 0px 10px rgb(100, 98, 98);
+  padding:15px;
+  border-radius:5px;
+  background-color: rgb(133, 42, 42);
+  transition: all 0.4s;
+  border: none;
+  color:white;
+}
+
+.update-podart-btn-container .delete-podart-btn:hover {
+  background-color: rgba(223, 78, 78, 0.452);
+  cursor: pointer;
+  transition: all 0.4s;
+}

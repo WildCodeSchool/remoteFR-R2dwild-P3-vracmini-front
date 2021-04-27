@@ -14,5 +14,15 @@ body {
   color : #F0D8B8
 }
 
-
+.grad-yellow {
+  background: rgb(255, 255, 255);
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 0) 50%,
+    #F0D8B8 75%,
+    #F0D8B8 100%
+   
+  );
+}
 

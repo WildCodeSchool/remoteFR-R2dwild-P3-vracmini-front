@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap');
+
+.container-contact {
+  display: flex;
+  justify-content: center;
+  margin: 100px auto 20px auto;
+}
+
+.container-intro-contact {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+}
+
+.container-intro-contact h1{
+  text-align: center;
+  font-family: 'Rounded Elegance', Arial;
+}
+
+.intro-contact{
+  font-size: 20px;
+ line-height: 35px;
+margin: 0 20px 0 20px;
+font-family: 'Open Sans Condensed', sans-serif;
+}
+
+.img-woman {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 50px;
+}
+
+@media screen and (max-width:500px){
+  .img-woman{
+display:none
+  }
+}

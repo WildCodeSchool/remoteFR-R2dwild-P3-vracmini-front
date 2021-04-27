@@ -51,11 +51,13 @@ const MenuInterface = prevProps => {
           </NavLink>
         </li>
       </ul>
-      <Link to='/' onClick={() => prevProps.setDisplayHeader(true)}>
-        <div className='deconnexion-admin'>
-          <p>Déconnexion</p>
-        </div>
-      </Link>
+      <div className='deconnexion-admin'>
+        <Link to='/' onClick={() => prevProps.setDisplayHeader(true)}>
+          <div className='deconnexion-btn'>
+            <p>Déconnexion</p>
+          </div>
+        </Link>
+      </div>
     </div>
   )
 }

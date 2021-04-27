@@ -1,0 +1,116 @@
+.update-aliment-page {
+  width: 100%;
+display: flex;
+justify-content: center;
+}
+
+.update-aliment-container {
+  width:70%;
+  box-shadow: 0px 0px 15px rgb(182, 178, 178);
+  margin-top: 30px;
+  margin-bottom:50px;
+  padding-bottom: 20px;;
+}
+.update-aliment-container h1 {
+  text-align: center;
+  font-size:35px;
+  font-family: 'Rounded Elegance', Arial;
+}
+
+.update-aliment-container form{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin:30px;
+}
+
+.update-aliment-container form label {
+  font-size: 24px;
+  font-family: 'Rounded Elegance', Arial;
+  font-weight: bold;
+}
+
+.update-aliment-container form input{
+font-size:16px;
+width:300px;
+}
+
+.update-aliment-container form select {
+  font-size:18px;
+}
+
+.update-btn-aliment {
+  font-size: 16px;
+  color:white;
+  text-decoration: none;
+  border:none;
+  background-color: rgb(214, 192, 68);
+  padding:5px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px rgb(109, 114, 62);
+  transition: all 0.2s;
+  margin-top: 10px;
+  width:120px;
+  align-self: center;
+  font-family: 'Rounded Elegance', Arial;
+}
+
+.update-btn-aliment:hover{
+  transition: all 0.3s;
+  font-size: 20px;
+  background-color: rgba(192, 180, 109, 0.548);
+  cursor: pointer;
+}
+
+.update-aliment .btn-container {
+display: flex;
+justify-content: space-around;
+}
+.back-page-aliment {
+  box-shadow: 0px 0px 10px rgb(100, 98, 98);
+  padding:25px;
+  border-radius:5px;
+  background-color: rgb(78, 83, 104);
+  transition: all 0.4s;
+  border: none;
+  margin-top:10px;
+}
+.back-page-aliment a{
+  color:white;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: bold;
+  font-family: 'Rounded Elegance', Arial;
+}
+.back-page-aliment:hover {
+  transition: all 0.4s;
+  background-color: rgba(103, 114, 156, 0.671);
+  cursor: pointer;
+}
+.delete-aliment-btn{ 
+  box-shadow: 0px 0px 10px rgb(100, 98, 98);
+  padding:25px;
+  border-radius:5px;
+  background-color: rgb(133, 42, 42);
+  transition: all 0.4s;
+  border: none;
+  margin-top:10px;
+  color:white;
+  width: 30%;
+  font-size: 20px;
+  font-weight: bold;
+  font-family: 'Rounded Elegance', Arial;
+}
+.delete-aliment-btn a {
+  color:white;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: bold;
+  font-family: 'Rounded Elegance', Arial;
+  border: none;
+}
+.delete-aliment-btn:hover{
+  background-color: rgba(223, 78, 78, 0.452);
+  cursor: pointer;
+  transition: all 0.4s;
+}

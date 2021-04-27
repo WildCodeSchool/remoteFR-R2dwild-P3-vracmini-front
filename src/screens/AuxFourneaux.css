@@ -1,13 +1,61 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap');
 
-.all_fourneaux{
+.all-fourneaux{
   display: flex;
   justify-content: space-around;
   font-family: 'Open Sans Condensed', sans-serif;
-  margin-top: 100px;
 }
-.left_side_menu{
-  padding-top: 60px;
+
+.arrow-down {
+  transition: all 0.5s;
+  transform: rotate(90deg);
+  font-size: 150%;
+  font-weight: bold;
+}
+
+.arrow-right {
+font-size: 150%;
+font-weight: bold;
+transition: all 0.5s;
+}
+
+.categories-fourneaux{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.content-fourneaux{
+  padding-top: 20px;
+  width: 250px;
+  text-align: left;
+  font-size: 20px;
+}
+
+
+.curieux-aliments {
+  cursor: pointer;
+  display: flex;
+  font-weight: bold;
+  color: black;
+}
+
+.curieux-aliments a{
+  color: black;
+}
+
+
+.img-fourneaux{
+  width: 250px;
+  margin: 0px 0px 30px 0px;
+}
+
+.invisible-aliments{
+  display: none;
+}
+
+.left-side-menu{
+  padding-top: 40px;
   margin-left: 20%;
   display: flex;
   flex-direction: column;
@@ -15,31 +63,36 @@
   font-size: 20px;
 }
 
-.right_side_content{
- margin-right: 20%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.categories_fourneaux{
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-}
-
-.left_side_menu :link{
+.left-side-menu :link{
   text-decoration: none;
   color: black;
   padding: 5px;
   text-align: left;
 }
 
-.left_side_menu p{
+.left-side-menu p{
   margin: 0;
   padding: 5px;
   text-align: left;
 }
+
+.right-side-content{
+ margin-right: 20%;
+  display: flex;
+margin-top:55px;
+}
+
+.tableau-conversion{
+  color: black;
+}
+
+.title-fourneaux{
+  color:  #F8DBAF;
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-size: 40px;
+}
+
+
 .visible-aliments{
   display: flex;
   flex-direction: column;
@@ -47,78 +100,61 @@
   font-size: 18px;
 }
 
-.visible-aliments :link{
+.visible-aliments a{
   padding: 2px;
+  color: black;
 }
-
-.invisible-aliments{
-  display: none;
+.right-content-character-mini{
+  display:none;
 }
-
-.title_fourneaux{
-  color:  #F8DBAF;
-  font-family: 'Open Sans Condensed', sans-serif;
-  font-size: 40px;
-}
-
-.img_fourneaux{
-  width: 400px;
-  margin-top: 40px;
-}
-
-.arrow-down {
-    transition: all 1s;
-    transform: rotate(90deg);
-    font-size: 150%;
-    font-weight: bold;
-  }
-
-.arrow-right {
-  font-size: 150%;
-  font-weight: bold;
-}
-
-.curieux_aliments {
-  cursor: pointer;
-  display: flex;
-  font-weight: bold;
-}
-
-.content_fourneaux{
-  padding-top: 50px;
-  width: 350px;
-  text-align: left;
-  font-size: 20px;
-}
-
 /* responsive */
 @media only screen and (max-width: 800px) {
-  .all_fourneaux{
+  .all-fourneaux{
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column-reverse;
-    justify-content: center;
+    align-items: center;
     margin-top: 0;
   }
 
-  .left_side_menu{
+  .left-side-menu{
     margin: 0;
     padding-top: 0;
+    margin-top:30px;
   }
 
-  .right_side_content{
-    margin-right: 0;
+  .right-content-character-mini{
+    display:flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    font-size:20px;
   }
 
-  .img_fourneaux{
-    width: 70%;
+  .right-side-content{
+   display: none;
   }
 
-  .content_fourneaux{
-    font-size: 16px;
+  .contain-character{
+    display:none;
+  }
+
+  .contain-character-mini{
+    display:flex;
+    width:200px;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .img-fourneaux{
+    width:80%;
+  }
+
+  .content-fourneaux{
+    font-size: 20px;
     padding-top: 10px;
   }
 
-  .title_fourneaux{
+  .title-fourneaux{
     font-size: 35px;
     margin: 0;
   }
